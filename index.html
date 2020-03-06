@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Pwd Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+
+      <div class="settings">
+        <div class="list">
+          <div class="length">
+            <label>
+              <span>Password length</span>
+              <input type="number" id="length" value="20" min="4" max="20" />
+            </label>
+          </div>
+          <div class="checkboxes">
+            <label>
+              <input type="checkbox" id="uppercase" checked />
+              <i></i>
+              <span>Include uppercase letters</span>
+            </label>
+            <label>
+              <input type="checkbox" id="lowercase" checked />
+              <i></i>
+              <span>Include lowercase letters</span>
+            </label>
+            <label>
+              <input type="checkbox" id="numbers" checked />
+              <i></i>
+              <span>Include numbers</span>
+            </label>
+            <label>
+              <input type="checkbox" id="symbols" checked />
+              <i></i>
+              <span>Include symbols</span>
+            </label>
+          </div>
+        </div>
+        <div class="generate">
+          <button class="btn btn-large" id="generate">
+            Generate password
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
